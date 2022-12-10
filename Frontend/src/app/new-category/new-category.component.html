@@ -1,0 +1,19 @@
+<div class="contrainer">
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">New Category</div>
+            <div class="panel-body">
+
+                <form #f="ngForm" (ngSubmit)="OnSaveCategory(f.value)">
+                    <div class="form-group">
+                        <label class="control-label">Category Name</label>
+                        <input class="form-control" type="text" name="name" ngModel>
+                    </div>
+                    <button class="btn btn-success" type="sumbit">Save</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>

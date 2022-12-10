@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Categories List</div>
+        <div class="panel-body">
+            <button class="btn btn-primary" (click)="onGetCategory()">Get Categories</button>
+        </div>
+        <div class="panel-body">
+            <table *ngIf="Category" class="table table-striped">
+                <tr>
+                    <th>Category Name</th>
+                </tr>
+                <tr *ngFor="let c of Category">
+                    <td>{{c.name}}</td>
+                    <td><a class="btn btn-danger" (click)="onDeleteCategory(c)">Delete</a></td>
+
+            </table>
+        </div>
+    </div>
+</div>
